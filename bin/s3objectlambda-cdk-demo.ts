@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { S3ObjectlambdaCdkDemoStack } from '../lib/s3objectlambda-cdk-demo-stack';
+import { DemoStack } from '../lib/demo-stack';
 
 const app = new cdk.App();
-new S3ObjectlambdaCdkDemoStack(app, 'S3ObjectlambdaCdkDemoStack', {
+new DemoStack(app, 'S3ObjectlambdaCdkDemoStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
